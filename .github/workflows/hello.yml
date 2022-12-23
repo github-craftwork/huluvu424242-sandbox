@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: hello-world
       run: |
-        echo "${NAME}"
+        echo "Guten Tag ${NAME}"
       env: 
-        NAME: Nobody
+        NAME: ${GITHUB_ACTOR}
         
