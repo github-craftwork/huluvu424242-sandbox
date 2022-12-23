@@ -1,4 +1,8 @@
 on: push # runs when ever there is a push to any branch of the repo
+
+env: 
+  NAME: ${{ env.GITHUB_ACTOR }}
+
 name: A workflow for my Hello World Action
 jobs:
   build:
@@ -8,6 +12,6 @@ jobs:
     - name: hello-world
       run: |
         echo "Guten Tag ${NAME}"
-      env: 
-        NAME: ${{ env.GITHUB_ACTOR }}
+        echo "Hello ${GITHUB_ACTOR}"
+     
         
