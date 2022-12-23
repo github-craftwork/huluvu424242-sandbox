@@ -9,5 +9,5 @@ jobs:
       run: |
         echo "Guten Tag ${NAME}"
       env: 
-        NAME: ${{ GITHUB_ACTOR }}
+        NAME: ${{ env.GITHUB_ACTOR }}
         
