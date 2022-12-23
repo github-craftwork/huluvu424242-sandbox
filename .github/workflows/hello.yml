@@ -1,7 +1,7 @@
 on: push # runs when ever there is a push to any branch of the repo
 
 env: 
-  NAME: ${env.GITHUB_ACTOR}
+  NAME: ${{ github.actor }}
 
 name: A workflow for my Hello World Action
 jobs:
